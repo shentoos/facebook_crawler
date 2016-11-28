@@ -41,7 +41,6 @@
                     console.log(data)
                     pic.setAttribute("src", data.picture.data.url)
                     $imageString = file_get_contents(data.picture.data.url);
-                    $save
                     $save = file_put_contents('Image/saveto/image.jpg', $imageString);
 
                 });
